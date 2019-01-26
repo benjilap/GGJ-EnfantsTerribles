@@ -9,6 +9,9 @@ public class PlayerMoves : MonoBehaviour
     private float floater;
     [SerializeField]
     private float thrust;
+   
+    private Vector2 DirJump, DirRight, DirLeft;
+
 
     [HideInInspector]
     public int integ;
@@ -23,6 +26,16 @@ public class PlayerMoves : MonoBehaviour
     bool activeR, activeL;
     GameObject myActiveWall;
 
+    //AFK
+    bool startTimerAfk;
+    float setStartTimerAfk;
+    float TimerAfk;
+    public float TimerLimitAfk;
+
+    public float scaleModifier = 0.01f;
+
+
+
 
     GameObject myObject;
 
@@ -35,7 +48,10 @@ public class PlayerMoves : MonoBehaviour
         myObject = this.gameObject;
         text = myObject.name;
         myBody = this.GetComponent<Rigidbody2D>();
-    }
+        DirJump = (Vector2.up * thrust);
+        DirRight = new Vector2(1 * floater, myBody.velocity.y);
+        DirLeft = new Vector2(-1 * floater, myBody.velocity.y);
+         }
 
     // Update is called once per frame
     void Update()
@@ -66,6 +82,8 @@ public class PlayerMoves : MonoBehaviour
 
         if (wallJump == true)
         {
+            Vector2 newDirJump = Vector2.zero;
+
             if (startTimer == false)
             {
                 startTimer = true;
@@ -86,8 +104,64 @@ public class PlayerMoves : MonoBehaviour
                 }
 
             }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (myActiveWall.transform.position.x > transform.position.x)
+                {
+
+                    newDirJump = new Vector2(DirJump.x + DirLeft.x * 150, DirJump.y + DirLeft.y);
+                }
+
+                if (myActiveWall.transform.position.x < transform.position.x)
+                {
+
+                    newDirJump = new Vector2(DirJump.x + DirRight.x * 150, DirJump.y + DirRight.y);
+                }
+
+                myBody.AddForce(newDirJump);
+
+            }
+        }
+
+
+        
+
+     
+
+        if (transform.localScale.x <= 1 && transform.localScale.x > 0)
+        {
+
+
+            if (myBody.velocity.magnitude == 0)
+
+            {
+                if (startTimerAfk == false)
+                {
+                    startTimerAfk = true;
+                    setStartTimerAfk = Time.time;
+                }
+                TimerAfk = Time.time - setStartTimer;
+
+                if (TimerAfk > TimerLimitAfk)
+                {
+                    myObject.transform.localScale -= new Vector3(scaleModifier, scaleModifier, scaleModifier);
+                }
+                  
+
+            }
+
+            else
+            {
+                startTimerAfk = false;
+            }
+
 
         }
+
+
+            
+
+        
     }
 
     //CollisionGround
@@ -95,8 +169,7 @@ public class PlayerMoves : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
-            //Output the message
-            Debug.Log("Ground is here!");
+            
             isGrounded = true;
             jump = false;
         }
@@ -115,6 +188,7 @@ public class PlayerMoves : MonoBehaviour
     {
         if (collision.gameObject.tag == "Mur")
         {
+
             wallJump = false;
             myActiveWall = null;
             activeL = false;
@@ -124,6 +198,8 @@ public class PlayerMoves : MonoBehaviour
         }
 
     }
+
+
 
 
 
