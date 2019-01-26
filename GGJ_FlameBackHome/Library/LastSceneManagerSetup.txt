@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Benji/Scene/BenjiScene.unity
-=======
-- path: Assets/Lisa/LisaScene.unity
->>>>>>> origin/branchLisa
   isLoaded: 1
   isActive: 1
