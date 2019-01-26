@@ -14,8 +14,6 @@ public class PlayerMoves : MonoBehaviour
 
 
     [HideInInspector]
-    public int integ;
-    string text;
     bool jump, isGrounded;
 
     //WallJump
@@ -27,8 +25,11 @@ public class PlayerMoves : MonoBehaviour
     GameObject myActiveWall;
 
     //AFK
+    [SerializeField]
     bool startTimerAfk;
+    [SerializeField]
     float setStartTimerAfk;
+    [SerializeField]
     float TimerAfk;
     public float TimerLimitAfk;
 
@@ -46,7 +47,6 @@ public class PlayerMoves : MonoBehaviour
     void Start()
     {
         myObject = this.gameObject;
-        text = myObject.name;
         myBody = this.GetComponent<Rigidbody2D>();
         DirJump = (Vector2.up * thrust);
         DirRight = new Vector2(1 * floater, myBody.velocity.y);
@@ -130,32 +130,42 @@ public class PlayerMoves : MonoBehaviour
 
         if (transform.localScale.x <= 1 && transform.localScale.x > 0)
         {
+            Debug.Log(myBody.velocity);
 
-
-            if (myBody.velocity.magnitude == 0)
+            if (myBody.velocity.magnitude <1)
 
             {
+
                 if (startTimerAfk == false)
                 {
                     startTimerAfk = true;
                     setStartTimerAfk = Time.time;
                 }
-                TimerAfk = Time.time - setStartTimer;
+                TimerAfk = Time.time - setStartTimerAfk;
 
                 if (TimerAfk > TimerLimitAfk)
+
                 {
                     myObject.transform.localScale -= new Vector3(scaleModifier, scaleModifier, scaleModifier);
+                    startTimerAfk = false;
                 }
-                  
+
 
             }
 
-            else
+            else if (myBody.velocity.magnitude >1)
+
+
             {
                 startTimerAfk = false;
             }
 
 
+        }
+
+        if (transform.localScale.x <= 0)
+        {
+            Debug.Log("Perdu");
         }
 
 
@@ -182,8 +192,8 @@ public class PlayerMoves : MonoBehaviour
         }
 
 
-
     }
+
     public void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Mur")
