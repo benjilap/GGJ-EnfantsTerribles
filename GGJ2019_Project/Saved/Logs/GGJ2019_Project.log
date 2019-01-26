@@ -684,3 +684,7 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.01.26-01.43.40:832][694]LogPlayLevel: Display: Destroying online subsystem :Context_5
 [2019.01.26-01.43.47:000][ 64]LogSlate: FSceneViewport::OnFocusLost() reason 0
 [2019.01.26-01.44.10:684][485]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (50.718 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.01.26-01.49.59:732][896]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.26-01.53.06:788][109]LogSavePackage: Moving '../../../../../GGJ github/GGJ-EnfantsTerribles/GGJ2019_Project/Saved/DevMap_Auto113F89C0E48E45E6400DA3CA0F6A29C1F.tmp' to '../../../../../GGJ github/GGJ-EnfantsTerribles/GGJ2019_Project/Saved/Autosaves/Game/FirstPersonBP/Maps/DevMap_Auto1.umap'
+[2019.01.26-01.53.06:791][109]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/DevMap' took 0.131
+[2019.01.26-01.53.06:791][109]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.131
