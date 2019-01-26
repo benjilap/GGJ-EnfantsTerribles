@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":4.942996978759766,"y":-2.4819998741149904,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":31.539705276489259,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-6.659920692443848,"y":6.539097785949707,"z":0.015479723922908306},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":32.96253967285156,"orthographic":true}
+>>>>>>> origin/branchLisa
