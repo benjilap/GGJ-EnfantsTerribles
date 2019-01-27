@@ -22,7 +22,8 @@ public class PlayerMoves : MonoBehaviour
     float Timer;
     bool wallJump;
     bool activeR, activeL;
-    GameObject myActiveWall;
+   public GameObject myActiveWall;
+    public float TimeWall = 1;
 
     //AFK
 
@@ -34,6 +35,9 @@ public class PlayerMoves : MonoBehaviour
     public float TimerLimitAfk;
 
     public float scaleModifier = 0.01f;
+    public float wallJumpPower;
+
+        public    Vector2 newDirJump ;
 
 
     Animator Movement;
@@ -87,11 +91,10 @@ public class PlayerMoves : MonoBehaviour
         {
             Jump();
         }
-
+        Debug.Log(myActiveWall);
 
         if (wallJump == true)
         {
-            Vector2 newDirJump = Vector2.zero;
 
             if (startTimer == false)
             {
@@ -100,7 +103,7 @@ public class PlayerMoves : MonoBehaviour
             }
             Timer = Time.time - setStartTimer;
 
-            if (Timer >= 5)
+            if (Timer >= TimeWall)
             {
                 if (myActiveWall.transform.position.x > transform.position.x)
                 {
@@ -118,16 +121,17 @@ public class PlayerMoves : MonoBehaviour
                 if (myActiveWall.transform.position.x > transform.position.x)
                 {
 
-                    newDirJump = new Vector2(DirJump.x + DirLeft.x * 150, DirJump.y + DirLeft.y);
+                    newDirJump = new Vector2(DirLeft.x * wallJumpPower, DirJump.y);
                 }
 
                 if (myActiveWall.transform.position.x < transform.position.x)
                 {
 
-                    newDirJump = new Vector2(DirJump.x + DirRight.x * 150, DirJump.y + DirRight.y);
+                    newDirJump = new Vector2(DirRight.x * wallJumpPower, DirJump.y);
                 }
 
                 myBody.AddForce(newDirJump);
+                //
 
             }
         }
@@ -183,7 +187,9 @@ public class PlayerMoves : MonoBehaviour
         if (collision.gameObject.tag == "Mur")
         {
             wallJump = true;
+
             myActiveWall = collision.gameObject;
+
 
         }
         if (collision.gameObject.tag == "Checkpoint")
