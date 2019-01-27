@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Lisa/LisaScene.unity
     guid: abb4eaed74fefc343acb5b888bc4302e
+  - enabled: 1
+    path: Assets/Lisa/Credits.unity
+    guid: ca2a5bd01fe69684b9a483d766ee6327
   m_configObjects: {}

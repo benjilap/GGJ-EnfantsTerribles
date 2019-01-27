@@ -69,6 +69,7 @@
     <Compile Include="Assets\Lisa\Scripts\ButtonMenu.cs" />
     <Compile Include="Assets\Lisa\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Lisa\Scripts\PlayerMoves.cs" />
+    <Compile Include="Assets\Lisa\Scripts\QuitGamePause.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
