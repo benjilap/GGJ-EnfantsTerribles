@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Arthur/ParticleArthur/ParticleFire.unity
+- path: Assets/Benji/Scene/BenjiScene.unity
   isLoaded: 1
   isActive: 1

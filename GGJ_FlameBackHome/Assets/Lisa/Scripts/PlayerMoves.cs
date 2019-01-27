@@ -6,7 +6,7 @@ public class PlayerMoves : MonoBehaviour
 {
 
     [SerializeField]
-    private float floater;
+    private float speed;
     [SerializeField]
     private float thrust;
    
@@ -25,11 +25,11 @@ public class PlayerMoves : MonoBehaviour
     GameObject myActiveWall;
 
     //AFK
-    [SerializeField]
+
     bool startTimerAfk;
-    [SerializeField]
+
     float setStartTimerAfk;
-    [SerializeField]
+
     float TimerAfk;
     public float TimerLimitAfk;
 
@@ -49,8 +49,8 @@ public class PlayerMoves : MonoBehaviour
         myObject = this.gameObject;
         myBody = this.GetComponent<Rigidbody2D>();
         DirJump = (Vector2.up * thrust);
-        DirRight = new Vector2(1 * floater, myBody.velocity.y);
-        DirLeft = new Vector2(-1 * floater, myBody.velocity.y);
+        DirRight = new Vector2(1 * speed, myBody.velocity.y);
+        DirLeft = new Vector2(-1 * speed, myBody.velocity.y);
          }
 
     // Update is called once per frame
@@ -60,7 +60,7 @@ public class PlayerMoves : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Q))
             {
-                myBody.velocity = new Vector2(-1 * floater, myBody.velocity.y);
+                myBody.velocity = new Vector2(-1 * speed, myBody.velocity.y);
 
             }
         }
@@ -70,7 +70,7 @@ public class PlayerMoves : MonoBehaviour
 
             if (Input.GetKey(KeyCode.D))
             {
-                myBody.velocity = new Vector2(1 * floater, myBody.velocity.y);
+                myBody.velocity = new Vector2(1 * speed, myBody.velocity.y);
             }
         }
 
@@ -123,14 +123,8 @@ public class PlayerMoves : MonoBehaviour
             }
         }
 
-
-        
-
-     
-
         if (transform.localScale.x <= 1 && transform.localScale.x > 0)
         {
-            Debug.Log(myBody.velocity);
 
             if (myBody.velocity.magnitude <1)
 
@@ -154,23 +148,15 @@ public class PlayerMoves : MonoBehaviour
             }
 
             else if (myBody.velocity.magnitude >1)
-
-
             {
                 startTimerAfk = false;
             }
-
-
         }
 
         if (transform.localScale.x <= 0)
         {
             Debug.Log("Perdu");
         }
-
-
-            
-
         
     }
 
