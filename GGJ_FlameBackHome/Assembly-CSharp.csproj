@@ -66,8 +66,11 @@
     <Compile Include="Assets\Benji\Scripts\LevelTrigger.cs" />
     <Compile Include="Assets\Benji\Scripts\PlayerPosLimit.cs" />
     <Compile Include="Assets\Benji\Scripts\Transition.cs" />
+    <Compile Include="Assets\Lisa\Scripts\ButtonMenu.cs" />
+    <Compile Include="Assets\Lisa\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Lisa\Scripts\PlayerMoves.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
+<<<<<<< HEAD
       <HintPath>D:/GGJ github/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
@@ -81,6 +84,21 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/GGJ github/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+=======
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+>>>>>>> DevBranch
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -284,6 +302,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
+<<<<<<< HEAD
       <HintPath>D:/GGJ github/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
@@ -291,6 +310,15 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/GGJ github/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+=======
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+>>>>>>> DevBranch
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

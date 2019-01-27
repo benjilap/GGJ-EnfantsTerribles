@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Victor dossier/Tuto.unity
+=======
+- path: Assets/Lisa/LisaScene.unity
+>>>>>>> DevBranch
   isLoaded: 1
   isActive: 1
