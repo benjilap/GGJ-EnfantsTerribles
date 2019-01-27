@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Lisa/Menu.unity
+- path: Assets/Lisa/LisaScene.unity
   isLoaded: 1
   isActive: 1
