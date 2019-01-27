@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public int gameLevel;
     public int previousLevel;
 
