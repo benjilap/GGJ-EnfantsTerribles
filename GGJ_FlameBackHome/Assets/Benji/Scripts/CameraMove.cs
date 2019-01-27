@@ -63,8 +63,9 @@ public class CameraMove : MonoBehaviour
             if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == true)
             {
                 GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = false;
-                Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);
+
             }
+            Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);
         }
 
         if (previousLevel == gameLevel)
