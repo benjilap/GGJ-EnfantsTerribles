@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Benji/Scene/BenjiScene.unity
+- path: Assets/Victor dossier/Tuto.unity
   isLoaded: 1
   isActive: 1
