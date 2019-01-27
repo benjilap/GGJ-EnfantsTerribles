@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Mur
   - Water
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

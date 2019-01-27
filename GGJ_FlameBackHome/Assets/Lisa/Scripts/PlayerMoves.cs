@@ -190,7 +190,11 @@ public class PlayerMoves : MonoBehaviour
             myActiveWall = collision.gameObject;
 
         }
+        if (collision.gameObject.tag == "Checkpoint")
+        {
+            myObject.transform.localScale = new Vector3(1, 1, 1);
 
+        }
 
     }
 
