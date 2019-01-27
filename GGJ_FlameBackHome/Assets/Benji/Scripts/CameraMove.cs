@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    //[HideInInspector]
+    [HideInInspector]
     public int gameLevel;
     public int previousLevel;
 
-    Transform playerSpawn;
-    public Transform currentLevel;
-    public Transform nextLevel;
+    [HideInInspector]
+    public Transform playerSpawn;
+    Transform currentLevel;
+    Transform nextLevel;
     
     LevelNum[] myLevels;
 
@@ -59,7 +60,11 @@ public class CameraMove : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("Player") == null)
         {
-            Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);
+            if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == true)
+            {
+                GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = false;
+                Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);
+            }
         }
 
         if (previousLevel == gameLevel)

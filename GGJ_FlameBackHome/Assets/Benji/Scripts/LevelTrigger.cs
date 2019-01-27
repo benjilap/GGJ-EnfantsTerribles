@@ -15,11 +15,12 @@ public class LevelTrigger : MonoBehaviour
 
             if (this.name == "BeginLevel")
             {
-                Debug.Log("3");
+
 
                 if (this.transform.parent.GetComponent<LevelNum>().levelNum == GameObject.FindObjectOfType<CameraMove>().gameLevel + 1)
                 {
                     GameObject.FindObjectOfType<CameraMove>().previousLevel = GameObject.FindObjectOfType<CameraMove>().gameLevel;
+                    GameObject.FindObjectOfType<CameraMove>().playerSpawn = this.transform;
                 }
             }
         }
