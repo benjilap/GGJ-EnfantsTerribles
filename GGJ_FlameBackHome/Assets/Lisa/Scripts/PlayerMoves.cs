@@ -164,12 +164,7 @@ public class PlayerMoves : MonoBehaviour
 
         if (transform.localScale.x <= 0.2f)
         {
-            Debug.Log("Perdu");
-            if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == false)
-            {
-                GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = true;
-            }
-            Destroy(this.gameObject, 0.3f);
+            Death();
         }
 
         
@@ -204,12 +199,7 @@ public class PlayerMoves : MonoBehaviour
 
         if (other.gameObject.tag == "Water")
         {
-
-            if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == false)
-            {
-                GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = true;
-            }
-            Destroy(this.gameObject, 0.3f);
+            Death();
 
         }
     }
@@ -240,7 +230,16 @@ public class PlayerMoves : MonoBehaviour
 
     }
 
+    void Death()
+    {
+        this.transform.Find("PlayerDeath").GetComponent<ParticleSystem>().Play();
 
+        if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == false)
+        {
+            GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = true;
+        }
+        Destroy(this.gameObject, 0.3f);
+    }
 
     
 }
