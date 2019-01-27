@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":4.942996978759766,"y":-2.4819998741149904,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":31.539705276489259,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-6.659920692443848,"y":6.539097785949707,"z":0.015479723922908306},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":32.96253967285156,"orthographic":true}
@@ -15,3 +16,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.2983947694301605,"y":3.61930775642395,"z":-0.08475571870803833},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":18.641748428344728,"orthographic":true}
 >>>>>>> origin/branchLisa
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":1.4108607769012452,"y":0.4349632263183594,"z":-16.89811134338379},"rotation":{"x":0.24569575488567353,"y":0.5623368620872498,"z":-0.17970378696918488,"w":0.7688416838645935},"size":3.5644168853759767,"orthographic":false}
+>>>>>>> origin/arthur

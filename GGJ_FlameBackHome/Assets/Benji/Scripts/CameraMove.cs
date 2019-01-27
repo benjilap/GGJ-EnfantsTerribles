@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public int gameLevel;
     public int previousLevel;
 
@@ -64,6 +64,10 @@ public class CameraMove : MonoBehaviour
             {
                 GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = false;
 
+            }
+            if (playerSpawn.transform.GetChild(0).GetComponent<Animator>().GetBool("Lighted") == false)
+            {
+                playerSpawn.transform.GetChild(0).GetComponent<Animator>().SetBool("Lighted", true);
             }
             Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);
         }
