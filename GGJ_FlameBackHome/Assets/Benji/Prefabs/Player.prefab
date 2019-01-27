@@ -4826,8 +4826,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   thrust: 400
+  myActiveWall: {fileID: 0}
+  TimeWall: 2
   TimerLimitAfk: 1
   scaleModifier: 0.05
+  wallJumpPower: 1
+  newDirJump: {x: 0, y: 0}
 --- !u!114 &364849268
 MonoBehaviour:
   m_ObjectHideFlags: 0
