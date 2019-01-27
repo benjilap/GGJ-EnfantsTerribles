@@ -3,18 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonMenu : MonoBehaviour
+public class QuitGamePause : MonoBehaviour
 {
-    public void LoadScene(string LevelName) 
-    {
-        SceneManager.LoadScene(LevelName);
-        
-    }
-
     public void QuitGame()
     {
         Application.Quit();
-    }
 
- 
+    }
 }
