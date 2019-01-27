@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Benji/Scene/BenjiScene.unity
-=======
-<<<<<<< HEAD
 - path: Assets/Victor dossier/Tuto.unity
-=======
-- path: Assets/Lisa/LisaScene.unity
->>>>>>> DevBranch
->>>>>>> origin/victor-branche
   isLoaded: 1
   isActive: 1

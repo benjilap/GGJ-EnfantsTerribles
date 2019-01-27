@@ -198,11 +198,8 @@ public class PlayerMoves : MonoBehaviour
 
 
         }
-        if (collision.gameObject.tag == "Checkpoint")
-        {
-            myObject.transform.localScale = new Vector3(1, 1, 1);
 
-        }
+        
 
     }
 

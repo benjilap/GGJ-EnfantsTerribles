@@ -19,6 +19,8 @@ public class LevelTrigger : MonoBehaviour
 
                 if (this.transform.parent.GetComponent<LevelNum>().levelNum == GameObject.FindObjectOfType<CameraMove>().gameLevel + 1)
                 {
+                    other.transform.parent.localScale = new Vector3(1, 1, 1);
+                    this.transform.GetChild(0).GetComponent<Animator>().SetBool("Lighted", true);
                     GameObject.FindObjectOfType<CameraMove>().previousLevel = GameObject.FindObjectOfType<CameraMove>().gameLevel;
                     GameObject.FindObjectOfType<CameraMove>().playerSpawn = this.transform;
                 }
