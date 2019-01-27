@@ -67,7 +67,6 @@ public class PlayerMoves : MonoBehaviour
             if (Input.GetKey(KeyCode.Q))
             {
                 myBody.velocity = new Vector2(-1 * speed, myBody.velocity.y);
-                Movement.SetInteger("Movement", 2);
             }
         }
 
@@ -78,13 +77,20 @@ public class PlayerMoves : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 myBody.velocity = new Vector2(1 * speed, myBody.velocity.y);
-                Movement.SetInteger("Movement", 1);
             }
         }
 
-        if(myBody.velocity.magnitude < 1)
+        if(myBody.velocity.magnitude == 0)
         {
             Movement.SetInteger("Movement", 0);
+        }else if(myBody.velocity.x < 0)
+        {
+            Movement.SetInteger("Movement", 2);
+
+        }else if (myBody.velocity.x > 0)
+        {
+            Movement.SetInteger("Movement", 1);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)

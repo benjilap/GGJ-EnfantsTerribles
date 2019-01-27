@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239379307519113285}
   serializedVersion: 6
-  lengthInSec: 1
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -169,7 +169,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 5
-      minScalar: 2
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4826,8 +4826,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   thrust: 500
+  myActiveWall: {fileID: 0}
+  TimeWall: 1
   TimerLimitAfk: 1
   scaleModifier: 0.05
+  wallJumpPower: 50
+  newDirJump: {x: 0, y: 0}
 --- !u!114 &364849268
 MonoBehaviour:
   m_ObjectHideFlags: 0

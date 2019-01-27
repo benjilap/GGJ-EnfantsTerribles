@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Lisa/LisaScene.unity
+- path: Assets/Benji/Scene/BenjiScene.unity
   isLoaded: 1
   isActive: 1
