@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22763f708fc01474ea5ae518765e2c7f
+guid: d0494d5f06d6e2c43ad2264de9672b0e
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -80,8 +80,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< HEAD
-=======
   - serializedVersion: 2
     buildTarget: iPhone
     maxTextureSize: 2048
@@ -137,7 +135,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
->>>>>>> origin/branchLisa
   spriteSheet:
     serializedVersion: 2
     sprites: []
