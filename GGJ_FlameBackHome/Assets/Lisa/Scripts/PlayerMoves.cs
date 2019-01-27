@@ -36,7 +36,7 @@ public class PlayerMoves : MonoBehaviour
     public float scaleModifier = 0.01f;
 
 
-
+    Animator Movement;
 
     GameObject myObject;
 
@@ -51,6 +51,7 @@ public class PlayerMoves : MonoBehaviour
         DirJump = (Vector2.up * thrust);
         DirRight = new Vector2(1 * speed, myBody.velocity.y);
         DirLeft = new Vector2(-1 * speed, myBody.velocity.y);
+        Movement = this.transform.GetChild(0).GetComponent<Animator>();
          }
 
     // Update is called once per frame
@@ -61,9 +62,10 @@ public class PlayerMoves : MonoBehaviour
             if (Input.GetKey(KeyCode.Q))
             {
                 myBody.velocity = new Vector2(-1 * speed, myBody.velocity.y);
-
+                Movement.SetInteger("Movement", 2);
             }
         }
+
 
         if (activeR == false)
         {
@@ -71,7 +73,13 @@ public class PlayerMoves : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 myBody.velocity = new Vector2(1 * speed, myBody.velocity.y);
+                Movement.SetInteger("Movement", 1);
             }
+        }
+
+        if(myBody.velocity.magnitude < 1)
+        {
+            Movement.SetInteger("Movement", 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -157,6 +165,7 @@ public class PlayerMoves : MonoBehaviour
         {
             Debug.Log("Perdu");
         }
+
         
     }
 
