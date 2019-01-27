@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":4.942996978759766,"y":-2.4819998741149904,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":31.539705276489259,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-6.659920692443848,"y":6.539097785949707,"z":0.015479723922908306},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":32.96253967285156,"orthographic":true}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":1.1224764585494996,"y":0.7783125042915344,"z":-17.064085006713868},"rotation":{"x":0.3603224754333496,"y":-0.27761223912239077,"z":0.11324157565832138,"w":0.8833320736885071},"size":6.873736381530762,"orthographic":false}
 >>>>>>> origin/arthur
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":2.119758129119873,"y":16.218961715698243,"z":-1.0247186422348023},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":103.7111587524414,"orthographic":true}
+>>>>>>> origin/victor-branche
