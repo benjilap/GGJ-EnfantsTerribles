@@ -67,8 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd2068b464fa3249995067f9e071cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  thrust: 500
+  speed: 4
+  thrust: 400
   TimerLimitAfk: 1
   scaleModifier: 0.01
 --- !u!114 &364849268
