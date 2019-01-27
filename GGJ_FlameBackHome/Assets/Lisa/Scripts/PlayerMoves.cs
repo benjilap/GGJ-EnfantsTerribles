@@ -36,7 +36,7 @@ public class PlayerMoves : MonoBehaviour
     public float scaleModifier = 0.01f;
 
 
-
+    Animator Movement;
 
     GameObject myObject;
 
@@ -51,7 +51,9 @@ public class PlayerMoves : MonoBehaviour
         DirJump = (Vector2.up * thrust);
         DirRight = new Vector2(1 * speed, myBody.velocity.y);
         DirLeft = new Vector2(-1 * speed, myBody.velocity.y);
-         }
+        Movement = this.transform.GetChild(0).GetComponent<Animator>();
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -61,9 +63,10 @@ public class PlayerMoves : MonoBehaviour
             if (Input.GetKey(KeyCode.Q))
             {
                 myBody.velocity = new Vector2(-1 * speed, myBody.velocity.y);
-
+                Movement.SetInteger("Movement", 2);
             }
         }
+
 
         if (activeR == false)
         {
@@ -71,7 +74,13 @@ public class PlayerMoves : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 myBody.velocity = new Vector2(1 * speed, myBody.velocity.y);
+                Movement.SetInteger("Movement", 1);
             }
+        }
+
+        if(myBody.velocity.magnitude < 1)
+        {
+            Movement.SetInteger("Movement", 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -123,7 +132,7 @@ public class PlayerMoves : MonoBehaviour
             }
         }
 
-        if (transform.localScale.x <= 1 && transform.localScale.x > 0)
+        if (transform.localScale.x <= 1 && transform.localScale.x > 0.2f)
         {
 
             if (myBody.velocity.magnitude <1)
@@ -153,10 +162,16 @@ public class PlayerMoves : MonoBehaviour
             }
         }
 
-        if (transform.localScale.x <= 0)
+        if (transform.localScale.x <= 0.2f)
         {
             Debug.Log("Perdu");
+            if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == false)
+            {
+                GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = true;
+            }
+            Destroy(this.gameObject, 0.3f);
         }
+
         
     }
 
@@ -184,6 +199,21 @@ public class PlayerMoves : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.tag == "Water")
+        {
+
+            if (GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition == false)
+            {
+                GameObject.FindObjectOfType<Transition>().GetComponent<Transition>().setTransition = true;
+            }
+            Destroy(this.gameObject, 0.3f);
+
+        }
+    }
+
     public void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Mur")
@@ -199,11 +229,6 @@ public class PlayerMoves : MonoBehaviour
 
     }
 
-
-
-
-
-
     public void Jump()
     {
         if (isGrounded)
@@ -216,4 +241,6 @@ public class PlayerMoves : MonoBehaviour
     }
 
 
+
+    
 }
