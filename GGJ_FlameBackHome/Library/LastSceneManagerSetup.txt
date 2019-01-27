@@ -1,8 +1,10 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Victor dossier/Tuto.unity
+<<<<<<< HEAD
 =======
 - path: Assets/Lisa/Menu.unity
 >>>>>>> origin/branchLisa
+=======
+>>>>>>> origin/victor-branche
   isLoaded: 1
   isActive: 1
