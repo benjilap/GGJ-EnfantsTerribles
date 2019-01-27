@@ -65,6 +65,8 @@
     <Compile Include="Assets\Benji\Scripts\LevelNum.cs" />
     <Compile Include="Assets\Benji\Scripts\LevelTrigger.cs" />
     <Compile Include="Assets\Benji\Scripts\PlayerRespawn.cs" />
+    <Compile Include="Assets\Lisa\Scripts\ButtonMenu.cs" />
+    <Compile Include="Assets\Lisa\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Lisa\Scripts\PlayerMoves.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GameJam/GGJ-EnfantsTerribles/GGJ_FlameBackHome/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
