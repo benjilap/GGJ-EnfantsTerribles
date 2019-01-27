@@ -245,6 +245,7 @@ MonoBehaviour:
     width: 1920
     height: 947
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 781, y: 474}
   m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
@@ -258,6 +259,13 @@ MonoBehaviour:
   controlID: 42
 --- !u!114 &7
 >>>>>>> origin/victor-branche
+=======
+  m_MinSize: {x: 787, y: 498}
+  m_MaxSize: {x: 18004, y: 14048}
+  vertical: 0
+  controlID: 32
+--- !u!114 &8
+>>>>>>> origin/branchLisa
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,11 +317,18 @@ MonoBehaviour:
     width: 1417
     height: 947
   m_MinSize: {x: 510, y: 498}
+<<<<<<< HEAD
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
   controlID: 55
 --- !u!114 &8
 >>>>>>> origin/victor-branche
+=======
+  m_MaxSize: {x: 14002, y: 14048}
+  vertical: 1
+  controlID: 33
+--- !u!114 &9
+>>>>>>> origin/branchLisa
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,6 +381,7 @@ MonoBehaviour:
   m_MinSize: {x: 510, y: 224}
   m_MaxSize: {x: 12010, y: 4024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 56
 --- !u!114 &9
 >>>>>>> origin/victor-branche
@@ -417,6 +433,9 @@ MonoBehaviour:
   - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
+=======
+  controlID: 34
+>>>>>>> origin/branchLisa
 --- !u!114 &10
 >>>>>>> origin/victor-branche
 MonoBehaviour:
@@ -496,6 +515,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 625
     width: 1417
     height: 322
@@ -503,6 +523,15 @@ MonoBehaviour:
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
   controlID: 83
+=======
+    y: 626
+    width: 1418
+    height: 321
+  m_MinSize: {x: 472, y: 274}
+  m_MaxSize: {x: 14002, y: 10024}
+  vertical: 0
+  controlID: 144
+>>>>>>> origin/branchLisa
 --- !u!114 &12
 >>>>>>> origin/victor-branche
 MonoBehaviour:
@@ -522,6 +551,7 @@ MonoBehaviour:
     x: 757
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 399
     height: 546
   m_MinSize: {x: 204, y: 224}
@@ -535,6 +565,10 @@ MonoBehaviour:
 =======
     width: 972
     height: 322
+=======
+    width: 974
+    height: 321
+>>>>>>> origin/branchLisa
   m_MinSize: {x: 232, y: 274}
   m_MaxSize: {x: 10002, y: 10024}
   m_ActualView: {fileID: 20}
@@ -578,11 +612,19 @@ MonoBehaviour:
 =======
     x: 972
     y: 0
+<<<<<<< HEAD
     width: 445
     height: 322
   m_MinSize: {x: 104, y: 124}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 23}
+=======
+    width: 444
+    height: 321
+  m_MinSize: {x: 240, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
+>>>>>>> origin/branchLisa
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
@@ -780,9 +822,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: b0fbffff
+=======
+      m_SelectedIDs: ccf9ffff
+      m_LastClickedID: -1588
+      m_ExpandedIDs: ccf9ffffb0fbffff3c2a0000
+>>>>>>> origin/branchLisa
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -847,6 +895,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 1.1224765, y: 0.7783125, z: -17.064085}
     speed: 2
     m_Value: {x: 1.1224765, y: 0.7783125, z: -17.064085}
@@ -855,6 +904,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 2.1197581, y: 16.218962, z: -1.0247186}
 >>>>>>> origin/victor-branche
+=======
+    m_Target: {x: -0.29839477, y: 3.6193078, z: -0.08475572}
+    speed: 2
+    m_Value: {x: -0.29839477, y: 3.6193078, z: -0.08475572}
+>>>>>>> origin/branchLisa
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -895,10 +949,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: -1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 103.71116
     speed: 2
     m_Value: 103.71116
 >>>>>>> origin/victor-branche
+=======
+    m_Target: 18.641748
+    speed: 2
+    m_Value: 18.641748
+>>>>>>> origin/branchLisa
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1274,6 +1334,7 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
 =======
@@ -1281,6 +1342,8 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300002c3100002e5c0000405c0000f05e0000925a00003cc20000c034000042250000ae5901002e1a0000de200000244b0000404b0000421a00006c21000008200000b8210000146c00004ad40000ee2b0000ee460000ca390000862f0000502d000000000000
 >>>>>>> origin/arthur
 =======
+=======
+>>>>>>> origin/branchLisa
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300002c3100002e5c0000405c0000f05e0000925a00003cc20000c034000042250000ae5901002e1a0000de200000244b0000404b0000421a00006c21000008200000b8210000146c00004ad40000ee2b0000ee460000ca390000862f000000000000
 >>>>>>> origin/victor-branche
@@ -1599,6 +1662,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 379
     y: 73
     width: 1148
@@ -1663,6 +1727,11 @@ MonoBehaviour:
     x: 1417
     y: 73
     width: 501
+=======
+    x: 1418
+    y: 73
+    width: 500
+>>>>>>> origin/branchLisa
     height: 927
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &26
